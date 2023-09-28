@@ -17,7 +17,7 @@ const {title, navItems} = Astro.props
     <ul class="space-y-3 font-medium md:text-lg text-heading-3">
         {navItems.map((navItem)=>(
             <li>
-                <a href={navItem.itemLink} class="transition hover:text-primary">
+                <a href={navItem.itemLink} class="transition hover:text-primary" target="_blank">
                     {navItem.itemText}
                 </a>
             </li>
