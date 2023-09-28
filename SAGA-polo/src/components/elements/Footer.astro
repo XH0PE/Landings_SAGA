@@ -5,76 +5,33 @@ import FooterNav from "../shared/FooterNav.astro";
 import Paragraph from "../shared/Paragraph.astro";
 const footerNav1 = [
     {
-        itemText:"Marketing",
+        itemText:"React",
         itemLink:"#"
     },
     {
-        itemText:"Analylitics",
-        itemLink:"#"
-    },
-    {
-        itemText:"Commerce",
-        itemLink:"#"
-    },
-    {
-        itemText:"Insights",
-        itemLink:"#"
-    }
-]
-
-const footerSupport = [
-    {
-        itemText:"Pricing",
-        itemLink:"#"
-    },
-    {
-        itemText:"Guides",
-        itemLink:"#"
-    },
-    {
-        itemText:"FAQ",
-        itemLink:"#"
-    },
-    {
-        itemText:"Contact",
+        itemText:"Jsx",
         itemLink:"#"
     }
 ]
 
 const footerCompany = [
     {
-        itemText:"About",
-        itemLink:"/about"
+        itemText:"JuanferGG",
+        itemLink:"https://github.com/JuanferGG"
     },
     {
-        itemText:"Blog",
-        itemLink:"#"
+        itemText:"JuanDiego",
+        itemLink:"https://github.com/JuanDiego-Arenas"
     },
     {
-        itemText:"Jobs",
-        itemLink:"#"
-    },
-    {
-        itemText:"Parteners",
-        itemLink:"#"
-    },
-    {
-        itemText:"Jobs",
-        itemLink:"#"
+        itemText:"XHOPE",
+        itemLink:"https://github.com/XH0PE"
     }
 ]
 const footerLegal = [
     {
-        itemText:"Claim",
+        itemText:"NodeJS",
         itemLink:"/#"
-    },
-    {
-        itemText:"Privacy",
-        itemLink:"#"
-    },
-    {
-        itemText:"Terms",
-        itemLink:"#"
     }
 ]
 ---
@@ -122,7 +79,7 @@ const footerLegal = [
                         </div>
                     </a>
                     <Paragraph className={"mt-8"}>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, maiores nam doloribus id magni
+                        “Sé bueno con los nerds. Es muy probable que termines trabajando para uno de ellos” - Bill Gates
                     </Paragraph>
                 </div>
 
@@ -159,13 +116,12 @@ const footerLegal = [
             </div>
 
             <GroupFooterNav>
-                <FooterNav title={"Compañia"} navItems={footerCompany}/>
-                <FooterNav title={"Soluciones"} navItems={footerNav1}/>
+                <FooterNav title={"Equipo"} navItems={footerCompany}/>
+                <FooterNav title={"Lenguaje"} navItems={footerNav1}/>
             </GroupFooterNav>
 
             <GroupFooterNav>
-                <FooterNav title={"Soporte"} navItems={footerSupport}/>
-                <FooterNav title={"Recursos"} navItems={footerLegal}/>
+                <FooterNav title={"Despliegue"} navItems={footerLegal}/>
             </GroupFooterNav>
 
         </div>
@@ -177,7 +133,7 @@ const footerLegal = [
                     &copy; <span id="year"></span> SAGA. Todos los derechos reservados
                 </div>
                 <div>
-                    Hecho en parte por <a href="https://github.com/XH0PE" target="_blank" class="font-semibold">X H O P E</a>
+                    Instructor lider <a href="https://github.com/hdtoledo" target="_blank" class="font-semibold">hdtoledo</a>
                 </div>
             </div>
         </Container>
