@@ -1,0 +1,88 @@
+---
+import Container from "../shared/Container.astro";
+import Paragraph from "../shared/Paragraph.astro";
+import Title from "../shared/Title.astro";
+
+---
+
+<section id="features">
+    <Container className="flex flex-col midmd:flex-row gap-10 lg:gap-12">
+        
+        <div class="flex-1 flex midmd:w-7/12 lg:w-1/2 flex-col">
+            <Title>
+                Características Destacadas de SAGA:            
+            </Title>
+            
+            <ul class="mt-8 space-y-4 text-heading-3 font-medium">
+                <li class="benefits">
+                    
+                    <span class="font-bold bg-box-bg rounded-full w-8 h-8 mr-3 text-primary inline-flex justify-center items-center">&checkmark;</span> Interfaz Intuitiva: 
+                    <br>
+                    <br>
+                    SAGA ofrece una interfaz fácil de usar que no requiere conocimientos técnicos avanzados. Los usuarios pueden comenzar a utilizarlo de inmediato.
+                    
+                </li>
+                <li class="benefits">
+                    
+                    <span class="font-bold bg-box-bg rounded-full w-8 h-8 mr-3 text-primary inline-flex justify-center items-center">&checkmark;</span> Generación de Informes en Tiempo Real: 
+                    <br>
+                    <br>
+                    Accede a informes detallados y actualizados en tiempo real sobre la asistencia de los aprendices y el desempeño en eventos, clases y reuniones.                    
+
+                </li>
+                <li class="benefits">
+                    
+                    <span class="font-bold bg-box-bg rounded-full w-8 h-8 mr-3 text-primary inline-flex justify-center items-center">&checkmark;</span> Integración Completa: 
+                    <br>
+                    <br>
+                    SAGA se integra sin problemas con otros sistemas utilizados en el SENA, lo que simplifica la administración y el flujo de datos.
+                    
+                </li>
+                <li class="benefits">
+                    
+                    <span class="font-bold bg-box-bg rounded-full w-8 h-8 mr-3 text-primary inline-flex justify-center items-center">&checkmark;</span> Seguridad y Privacidad: 
+                    <br>
+                    <br>
+                    La seguridad de los datos es una prioridad en SAGA. Utilizamos las últimas medidas de seguridad para proteger la información confidencial de los usuarios.
+                    
+                </li>
+                <li class="benefits">
+                    
+                    <span class="font-bold bg-box-bg rounded-full w-8 h-8 mr-3 text-primary inline-flex justify-center items-center">&checkmark;</span> Soporte Técnico Confiable: 
+                    <br>
+                    <br>
+                    Nuestro equipo de soporte técnico está disponible para ayudarte en cualquier momento, garantizando una experiencia sin problemas con SAGA.
+                    
+                </li>
+                <li class="benefits">
+                    
+                    <span class="font-bold bg-box-bg rounded-full w-8 h-8 mr-3 text-primary inline-flex justify-center items-center">&checkmark;</span> Personalización Flexible: 
+                    <br>
+                    <br>
+                    Adaptamos SAGA a las necesidades específicas de tu institución, lo que garantiza que obtengas una solución que se ajusta perfectamente a tu entorno de formación.
+                    
+                </li>
+            </ul>
+        </div>
+
+        <div class="max-w-md mx-auto midmd:max-w-none lg:mx-0  lg:pr-10 xl:pr-2 flex-1 flex w-11/12 midmd:w-5/12 lg:w-1/2 midmd:h-auto">
+            <div class="max-w-md mx-auto midmd:max-w-none lg:mx-0  lg:pr-10 xl:pr-2 flex-1 flex w-11/12 midmd:w-5/12 lg:w-1/2 midmd:h-auto">
+                <div class="w-full h-80 sm:h-96 midmd:h-full relative">
+                    <div class="absolute rotate-45 -left-5 md:-left-10 lg:-left-20 xl:-left-24 p-1 top-1/2 w-16 h-26 bg-gradient-to-br from-primary to-orange-400 blur-3xl opacity-50"></div>
+                    <div class="absolute  p-1 -top-4 md:-top-10 right-0 w-20 h-20 bg-gradient-to-br from-primary to-orange-400 rounded-full blur-3xl opacity-60"></div>
+                    
+                    <span class="absolute w-full aspect-[16/5] -skew-x-12 rounded-full bg-gradient-to-tr from-primary to-green-400 opacity-40 blur-2xl left-0 bottom-0"></span>
+                    <img src={"/logos/SAGA.svg"} alt="banner image" 
+                    width="1240" height="1485"
+                    class=" w-auto left-1/2 -translate-x-1/2 absolute bottom-0 max-h-full" style="width: 1000px; padding:20px;" />
+                </div>
+            </div>
+        </div>
+    </Container>
+</section>
+
+<style>
+    .benefits{
+        font-weight: bolder;
+    }
+</style>

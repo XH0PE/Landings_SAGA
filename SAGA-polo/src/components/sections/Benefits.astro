@@ -1,0 +1,69 @@
+---
+import Container from "../shared/Container.astro";
+import Info from "../cards/Info.astro";
+import Paragraph from "../shared/Paragraph.astro";
+import Title from "../shared/Title.astro";
+
+---
+
+<section id="about-us">
+    <Container className="flex flex-col midmd:flex-row gap-10 lg:gap-12">
+        <div class="max-w-md mx-auto midmd:max-w-none lg:mx-0  lg:pr-10 xl:pr-2 flex-1 flex w-11/12 midmd:w-5/12 lg:w-1/2 midmd:h-auto">
+            <div class="w-full h-80 sm:h-96 midmd:h-full relative">
+                <div class="absolute rotate-45 -left-5 md:-left-10 lg:-left-20 xl:-left-24 p-1 top-1/2 w-16 h-16 bg-gradient-to-br from-primary to-orange-400 blur-3xl opacity-50"></div>
+                <div class="absolute  p-1 -top-4 md:-top-10 right-0 w-20 h-20 bg-gradient-to-br from-primary to-orange-400 rounded-full blur-3xl opacity-60"></div>
+                
+                <span class="absolute w-full aspect-[16/5] -skew-x-12 rounded-full bg-gradient-to-tr from-primary to-green-400 opacity-40 blur-2xl left-0 bottom-0"></span>
+                <img src={"/logos/logo_sena.png"} alt="banner image" 
+                width="1240" height="1385"
+                class=" w-auto left-1/2 -translate-x-1/2 absolute bottom-0 max-h-full" style="width: 900px;" />
+            </div>
+        </div>
+        <div class="flex-1 flex midmd:w-7/12 lg:w-1/2 flex-col ">
+            <Title>
+                Beneficios Clave de SAGA:
+            </Title>
+            
+            <ul class="mt-8 space-y-4 text-heading-3 font-medium">
+                <li class="benefits">
+                    
+                    <span class="font-bold bg-box-bg rounded-full w-8 h-8 mr-3 text-primary inline-flex justify-center items-center">&checkmark;</span> Optimización del Tiempo: 
+                    <br>
+                    <br>
+                     SAGA simplifica la toma de asistencias y la gestión de eventos, lo que significa menos tiempo invertido en tareas administrativas tediosas y más tiempo dedicado a lo que realmente importa: la educación.
+                    
+                </li>
+                <li class="benefits">
+                    
+                    <span class="font-bold bg-box-bg rounded-full w-8 h-8 mr-3 text-primary inline-flex justify-center items-center">&checkmark;</span> Mejora en la Toma de Decisiones: 
+                    <br>
+                    <br>
+                    Con acceso a datos precisos en tiempo real, los líderes del SENA pueden tomar decisiones informadas para mejorar la eficiencia y la calidad de la formación.
+                    
+                </li>
+                <li class="benefits">
+                    
+                    <span class="font-bold bg-box-bg rounded-full w-8 h-8 mr-3 text-primary inline-flex justify-center items-center">&checkmark;</span> Reducción de Errores Administrativos: 
+                    <br>
+                    <br>
+                    SAGA elimina la posibilidad de errores humanos en la toma de asistencias, lo que garantiza un registro preciso y confiable de las actividades de los aprendices.
+                    
+                </li>
+                <li class="benefits">
+                    
+                    <span class="font-bold bg-box-bg rounded-full w-8 h-8 mr-3 text-primary inline-flex justify-center items-center">&checkmark;</span> Facilita la Comunicación: 
+                    <br>
+                    <br>
+                    Nuestra plataforma mejora la comunicación entre instructores, coordinadores académicos y estudiantes, permitiendo una interacción más fluida y efectiva.
+                    
+                </li>
+            </ul>
+        </div>
+    </Container>
+</section>
+
+<style>
+    .benefits{
+        font-weight: bolder;
+    }
+</style>
